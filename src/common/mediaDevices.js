@@ -8,6 +8,7 @@ export function enumerateDevices() {
 };
 
 export function getUserMedia(constraints) {
+    console.log(constraints);
     if (navigator.mediaDevices
             && typeof navigator.mediaDevices.getUserMedia === 'function') {
         return navigator.mediaDevices
